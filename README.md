@@ -1,2 +1,33 @@
 # packages-by-cli
-Total published packages by a npm user.
+
+> Total published packages by an npm user.
+
+## Install 
+
+```
+	$ sudo npm install --global packages-by-cli
+```
+
+## Usage
+
+```
+Usage: packages-by -u [user.name]
+
+		Options:
+ 
+           -u  npm username                                                [required]
+ 
+            Missing required argument: u
+ 
+ 
+		$ packages-by -u feross
+```
+
+## Related
+
+- [twifo](https://github.com/codedotjs/twifo-cli) : Get user information of a Twitter user.
+
+## LICENSE
+
+MIT &copy; [Rishi Giri](http://rishigiri.com)
+
