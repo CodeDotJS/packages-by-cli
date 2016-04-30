@@ -27,7 +27,7 @@ $ packages-by -u feross
 
 ## Related
 
-- [twifo](https://github.com/codedotjs/twifo-cli) : Get user information of a Twitter user.
+- [twifo-cli](https://github.com/codedotjs/twifo-cli) : Get user information of a Twitter user.
 
 ## LICENSE
 
