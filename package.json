@@ -5,7 +5,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/codedotjs/packages-by-cli.git"
+    "url": "git+https://github.com/CodeDotJS/packages-by-cli.git"
   },
   "author": "Rishi Giri <rushforlinux@gmail.com> (rishigiri.com)",
   "bin": {
@@ -42,8 +42,8 @@
     "esnext": true
   },
   "bugs": {
-    "url": "https://github.com/codedotjs/packages-by-cli/issues"
+    "url": "https://github.com/CodeDotJS/packages-by-cli/issues"
   },
-  "homepage": "https://github.com/codedotjs/packages-by-cli#readme",
+  "homepage": "https://github.com/CodeDotJS/packages-by-cli#readme",
   "main": "cli.js"
 }
