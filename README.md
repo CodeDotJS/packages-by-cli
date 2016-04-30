@@ -20,9 +20,9 @@ Usage: packages-by -u [user.name]
             Missing required argument: u
  
  
-		$ packages-by -u feross
+$ packages-by -u feross
 
-		❱ Total Packages by feross : 125
+	❱ Total Packages by feross : 125
 ```
 
 ## Related
