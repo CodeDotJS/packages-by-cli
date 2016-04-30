@@ -15,7 +15,7 @@ Usage: packages-by -u [user.name]
 
 		Options:
  
-           -u  npm username                                                [required]
+           -u  npm username                           [required]
  
             Missing required argument: u
  
