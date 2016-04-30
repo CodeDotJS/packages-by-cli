@@ -1,6 +1,6 @@
 {
   "name": "packages-by-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get user info of an NPM user",
   "license": "MIT",
   "repository": {
@@ -31,7 +31,7 @@
   "dependencies": {
     "colors": "*",
     "yargs": "*",
-    "twifo": "*"
+    "packages-by": "*"
   },
   "devDependencies": {
     "ava": "*",
