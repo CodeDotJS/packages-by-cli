@@ -1,0 +1,49 @@
+{
+  "name": "packages-by-cli",
+  "version": "1.0.0",
+  "description": "Get user info of an NPM user",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codedotjs/packages-by-cli.git"
+  },
+  "author": "Rishi Giri <rushforlinux@gmail.com> (rishigiri.com)",
+  "bin": {
+    "packages-by": "cli.js"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "cli.js"
+  ],
+  "keywords": [
+    "cli-app",
+    "cli",
+    "npm",
+    "user",
+    "total",
+    "packages"
+  ],
+  "dependencies": {
+    "colors": "*",
+    "yargs": "*",
+    "twifo": "*"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "pify": "^2.2.0",
+    "xo": "*"
+  },
+  "xo": {
+    "esnext": true
+  },
+  "bugs": {
+    "url": "https://github.com/codedotjs/packages-by-cli/issues"
+  },
+  "homepage": "https://github.com/codedotjs/packages-by-cli#readme",
+  "main": "cli.js"
+}
