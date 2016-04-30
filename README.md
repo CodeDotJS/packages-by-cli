@@ -21,6 +21,8 @@ Usage: packages-by -u [user.name]
  
  
 		$ packages-by -u feross
+
+		❱ Total Packages by feross : 125
 ```
 
 ## Related
