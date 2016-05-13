@@ -1,7 +1,7 @@
 {
   "name": "packages-by-cli",
   "version": "1.0.1",
-  "description": "Get user info of an NPM user",
+  "description": "Total packages published by a npm user.",
   "license": "MIT",
   "repository": {
     "type": "git",

@@ -27,7 +27,9 @@ $ packages-by -u feross
 
 ## Related
 
-- [twifo-cli](https://github.com/codedotjs/twifo-cli) : Get user information of a Twitter user.
+- [packages-by](https://github.com/CodeDotJS/packages-by) : API for this CLI Tool.
+
+- [packstat-cli](https://github.com/CodeDotJS/packstat-cli) : Displays metrics about npm modules.
 
 ## LICENSE
 
