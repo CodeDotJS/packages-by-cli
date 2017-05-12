@@ -2,34 +2,49 @@
 
 'use strict';
 
-const packagesBy = require('packages-by');
+const dns = require('dns');
+const got = require('got');
+const cheerio = require('cheerio');
+const logUpdate = require('log-update');
+const ora = require('ora');
+const updateNotifier = require('update-notifier');
+const pkg = require('./package.json');
 
-const colors = require('colors');
+updateNotifier({pkg}).notify();
+const arg = process.argv[2];
+const spinner = ora();
 
-const argv = require('yargs')
+if (!arg) {
+	console.log(`
+ Usage: packages-by <user>
 
-    .usage(colors.cyan.bold('\nUsage: $0 -u [user.name]'))
+ Example :
+   $ packages-by feross
+   `);
+	process.exit(1);
+}
 
-    .demand(['u'])
+dns.lookup('npmjs.com', err => {
+	if (err) {
+		logUpdate('\n› Please check your internet connection!\n');
+		process.exit(1);
+	} else {
+		logUpdate();
+		spinner.text = `Fetching`;
+		spinner.start();
+	}
+});
 
-    .describe('u', 'npm username')
+const url = `https://npmjs.com/~${arg}`;
 
-    .argv;
-
-packagesBy(argv.u).then(user => {
-	const inf = [];
-
-	const packageRow = (prefix, key) => {
-		if (user[key]) {
-			inf.push(`${prefix} ${user[key]}`);
-		}
-	};
-
-	console.log('\n');
-
-	packageRow(' ❱ npm user ' + colors.green.bold(argv.u) + ' has', 'packages');
-
-	console.log(inf.join('\n'));
-
-	console.log('\n');
+got(url).then(res => {
+	const $ = cheerio.load(res.body);
+	const count = $('.undecorated').text().trim();
+	logUpdate(`\n› ${count}\n`);
+	spinner.stop();
+}).catch(err => {
+	if (err) {
+		logUpdate(`\n› ${arg} is not a npm user\n`);
+		process.exit(1);
+	}
 });
