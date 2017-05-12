@@ -1,35 +1,30 @@
-# packages-by-cli
+# packages-by-cli [![Build Status](https://travis-ci.org/CodeDotJS/packages-by-cli.svg?branch=master)](https://travis-ci.org/CodeDotJS/packages-by-cli)
 
 > Total published packages by an npm user.
 
-## Install 
+<p align="center"><img src="https://raw.githubusercontent.com/rishigiridotcom/rishigiri.com/6edaa7d935b07de21951adb77f0e21cefa868763/github/ezgif-3-59be8e1184.gif"></p>
+
+## Install
 
 ```
-	$ sudo npm install --global packages-by-cli
+$ [sudo] npm install --global packages-by-cli
 ```
 
 ## Usage
 
 ```
-Usage: packages-by -u [user.name]
+ Usage: packages-by <user>
 
-		Options:
- 
-           -u  npm username                           [required]
- 
-            Missing required argument: u
- 
- 
-$ packages-by -u feross
+ Example :
+   $ packages-by feross
 
-❱ Total Packages by feross : 125
 ```
 
 ## Related
 
-- [packages-by](https://github.com/CodeDotJS/packages-by) : API for this CLI Tool.
+- __[`packages-by`](https://github.com/CodeDotJS/packages-by)__ `: API for this CLI Tool.`
 
-- [packstat-cli](https://github.com/CodeDotJS/packstat-cli) : Displays metrics about npm modules.
+- __[`packstat-cli`](https://github.com/CodeDotJS/packstat-cli)__ `: Displays metrics about npm modules.`
 
 ## LICENSE
 
