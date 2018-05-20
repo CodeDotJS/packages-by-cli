@@ -1,6 +1,6 @@
 {
   "name": "packages-by-cli",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Total packages published by a npm user.",
   "license": "MIT",
   "repository": {
