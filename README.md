@@ -7,7 +7,7 @@
 ## Install
 
 ```
-$ [sudo] npm install --global packages-by-cli
+$ npm install --global packages-by-cli
 ```
 
 ## Usage
