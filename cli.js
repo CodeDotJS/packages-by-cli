@@ -39,8 +39,8 @@ const url = `https://npmjs.com/~${arg}`;
 
 got(url).then(res => {
 	const $ = cheerio.load(res.body);
-	const count = $('.undecorated').text().trim();
-	logUpdate(`\n› ${count}\n`);
+	const count = $('.ph1').text().trim();
+	logUpdate(`\n› ${count} packages by ${arg.replace('~', '')}\n`);
 	spinner.stop();
 }).catch(err => {
 	if (err) {
